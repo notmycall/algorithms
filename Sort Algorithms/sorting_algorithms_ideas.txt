@@ -1,4 +1,4 @@
-    Algorithm Ideas: 
+Algorithm Ideas: 
     Selection Sort
     Bubble Sort
     Insertion Sort
