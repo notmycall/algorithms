@@ -1,9 +1,13 @@
+'''
+Binary Search Explaination:
+
+Binary search is a an efficent algorithm that locates a specified target value by splitting 
+the array in half and disregarding the half that does not contain the desired value and repeating 
+this process until the target value is either found or there are no values left to search.
+'''
 
 
-# Binary search continuously splits the sorted given sequence until it either finds the value, or returns None
-# Runs in ##### Time
-
-def binary_search_iterative(tofind, sequence):
+def binary_search_iterative(tofind, sequence): # Runtime of O(log n)
     begin_index = 0
     end_index = len(sequence) - 1
     while begin_index <= end_index:
@@ -16,6 +20,23 @@ def binary_search_iterative(tofind, sequence):
         else:
             end_index = midpoint - 1
     return None
+
+def binary_search_recursive(tofind, sequence, begin_index=0, end_index=None): # Runtime of O(log n)
+    if end_index == None:
+        end_index = len(sequence) -1
+    if begin_index > end_index:
+        return False
+    midpoint = (begin_index + end_index) // 2
+    if sequence[midpoint] == tofind :
+        return midpoint
+    elif sequence[midpoint] < tofind:
+        return binary_search_recursive(tofind, sequence, midpoint + 1, end_index)
+    else:
+        return binary_search_recursive(tofind, sequence, begin_index, midpoint - 1)
+
+
+
+
 
 
 
