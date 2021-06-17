@@ -2,7 +2,8 @@
 Sequential Search Explaination: 
 
 # Sequential search iterates through the sequence to find a given value. 
-# It takes O(n) time to run. 
+
+Has a runtime of O()
 '''
 
 
