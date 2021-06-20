@@ -1,9 +1,12 @@
 '''
 Sequential Search Explaination: 
 
-# Sequential search iterates through the sequence to find a given value. 
+# Sequential search iterates through the sequence to find a given value.
+If the current value is the same as the target value, the index is returned. 
+Otherwise, it moves on to the next value. 
+If no values are found to match, None is returned.
 
-Has a runtime of O()
+Has a runtime of O(n)
 '''
 
 

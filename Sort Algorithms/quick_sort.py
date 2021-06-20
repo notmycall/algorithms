@@ -9,7 +9,7 @@ The sequences are then sorted recursively until all the sequences are sorted and
 
 Has a runtime of O(n log n)
 '''
-# Algorithm
+# Recursive Implementation
 def quick_sort_recursive(sequence):
     length = len(sequence)
     if length <= 1: # Returns the sequence if the length is 0 or 1. This is the base case.  
